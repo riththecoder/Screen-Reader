@@ -274,7 +274,7 @@ st.markdown(
 with st.expander("⚙️ Configuration", expanded=not st.session_state.watching):
     target_text = st.text_input(
         "Target text",
-        value=st.session_state.get("target_text", ""),
+        value=st.session_state.get("target_text", "hello world"),
         placeholder="Text to watch for...",
         disabled=st.session_state.watching,
     )
